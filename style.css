@@ -1,0 +1,229 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Style pour le header */
+header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #0078d4;
+    color: white;
+}
+
+/* Style pour le titre principal */
+header h1 {
+    font-size: 48px; /* Taille plus grande pour le titre principal */
+    margin-bottom: 10px;
+}
+
+/* Style pour le sous-titre */
+header p {
+    font-size: 20px; /* Taille plus grande pour le sous-titre */
+    margin-bottom: 20px;
+}
+
+/* Style pour la barre de navigation dans le header */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style pour les sections principales */
+section {
+    padding: 40px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    padding: 5px;
+    font-size: 28px; /* Taille légèrement plus grande pour les titres de section */
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Style pour les liens */
+a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style pour le pied de page */
+
+
+/* Style pour les annonces d'hébergement */
+.annonces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.annonce {
+    width: calc(25% - 20px); /* Pour afficher quatre annonces par ligne */
+    height: auto; /* Réduire la hauteur automatiquement en fonction du contenu */
+    margin-right: 20px; /* Espace entre les annonces */
+    margin-bottom: 20px; /* Espace en dessous des annonces */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.annonce:nth-child(4n) {
+    margin-right: 0; /* Pas de marge à droite pour le quatrième élément de chaque ligne */
+}
+
+.annonce img {
+    max-width: 100%;
+    height: 200px; /* Hauteur fixe pour toutes les images */
+    object-fit: cover; /* Remplir complètement le conteneur, en coupant si nécessaire */
+    margin-bottom: 10px;
+}
+
+.annonce h3 {
+    font-size: 24px; /* Taille légèrement plus grande pour les titres d'annonce */
+    margin: 0;
+}
+
+.annonce p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.annonce .secteur {
+    color: #0078d4;
+    font-weight: bold;
+}
+
+.annonce .tarif {
+    font-weight: bold;
+}
+
+.annonce .lien-details {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0078d4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.annonce .lien-details:hover {
+    background-color: #005b9f;
+}
+
+/* Style pour le logo dans la barre de navigation */
+nav ul li a img {
+    height: 40px; /* Ajustez la hauteur selon vos besoins */
+    width: auto;
+    vertical-align: middle;
+    margin-right: 10px; /* Ajout d'une marge à droite pour l'espacement */
+}
+
+/* Si vous souhaitez ajuster la taille du logo dans le header également */
+header img {
+    height: 60px; /* Ajustez la hauteur selon vos besoins */
+    width: auto;
+    vertical-align: middle;
+    margin-right: 10px; /* Ajout d'une marge à droite pour l'espacement */
+}
+#banner {
+    position: relative;
+    height: 400px; /* Ajustez la hauteur selon vos besoins */
+    background-image: url('img/villa-mexique-7.jpg'); /* Chemin vers votre image */
+    background-position: center; /* Centrer l'image horizontalement et verticalement */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.banner-content {
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    border-radius: 5px;
+}
+
+.banner-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.banner-content .btn {
+    padding: 10px 20px;
+    background-color: #999; /* Couleur grise */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.banner-content .btn:hover {
+    background-color: #666; /* Couleur grise plus foncée au survol */
+}
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title h1 {
+    font-size: 48px;
+    font-family: "Arial Black", sans-serif; /* Exemple de police différente */
+    color: #333; /* Couleur de texte personnalisée */
+}
+
+.title p {
+    font-size: 20px;
+    font-style: italic; /* Style de texte italique */
+    color: #666;
+}
+
+.title h1::after {
+    content: ""; /* Ajouter un séparateur après le titre */
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #0078d4; /* Couleur du séparateur */
+    margin: 10px auto; /* Marge autour du séparateur */
+}
